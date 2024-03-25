@@ -1,33 +1,30 @@
 {
-  "name": "cypress-aiotests-reporter",
-  "version": "1.2.0",
-  "description": "Plugin to report cypress results to AIO Tests Jira",
+  "name": "no-record-video-test-passed-cypress-plugin",
+  "version": "1.0.0",
+  "description": "Plugin delete the recorded video for specs that had no retry attempts or failures when using Cypress test retries.",
   "main": "src/index.js",
   "scripts": {
     "test": "cypress run",
     "semantic-release": "semantic-release"
   },
   "keywords": [
-    "aiotests",
+    "video",
     "cypress",
-    "report",
-    "jira"
+    "retry",
+    "passed",
+    "failed"
   ],
-  "author": "Navarambh Software",
+  "author": "Dino DONA",
   "license": "MIT",
   "devDependencies": {
     "cypress": "^10.6.0"
   },
-  "dependencies": {
-    "ansis": "^2.0.2",
-    "axios": "^1.6.2",
-    "form-data": "^4.0.0"
-  },
+  "dependencies": {},
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/aiotests/cypress-aiotests-reporter.git"
+    "url": "https://github.com/Devstored/no-record-video-test-passed-cypress-plugin.git"
   }
 }
