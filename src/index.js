@@ -16,7 +16,7 @@ function getPluginConfig(config, reportError) {
   }
 }
 
-const registerAIOTestsPlugin = (on, config) => {
+const noRecordVideoTestPassed = (on, config) => {
   on("before:run", () => {
     getPluginConfig(config, true);
   });
@@ -35,4 +35,4 @@ const registerAIOTestsPlugin = (on, config) => {
   });
 };
 
-module.exports = { registerAIOTestsPlugin };
+module.exports = { noRecordVideoTestPassed };
