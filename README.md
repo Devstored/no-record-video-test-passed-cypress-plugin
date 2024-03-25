@@ -1,7 +1,3 @@
-Certainly! Below is an English version of the `README.md` documentation for your Cypress plugin, `noRecordVideoTestPassed`, formatted in Markdown.
-
----
-
 # noRecordVideoTestPassed
 
 The `noRecordVideoTestPassed` Cypress plugin allows for not recording videos of tests that pass. This can help save storage space used by test videos by only keeping videos of failed tests.
@@ -27,17 +23,19 @@ After installation, you need to configure the plugin in your Cypress project.
 1. Open the `cypress/plugins/index.js` file and add the following code:
 
 ```javascript
-const { noRecordVideoTestPassedPlugin } = require('no-record-video-test-passed-cypress-plugin/src')
+const {
+  noRecordVideoTestPassedPlugin,
+} = require("no-record-video-test-passed-cypress-plugin/src");
 
 module.exports = (on, config) => {
-  noRecordVideoTestPassedPlugin(on,config);
-}
+  noRecordVideoTestPassedPlugin(on, config);
+};
 ```
 
 2. Then, configure the plugin in your `cypress.config.js` file (or whichever configuration file you are using) to enable or disable the feature:
 
 ```javascript
-const { defineConfig } = require('cypress')
+const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   env: {
@@ -46,7 +44,7 @@ module.exports = defineConfig({
     },
   },
   // Your other Cypress configurations...
-})
+});
 ```
 
 Make sure to replace `"enable": true` with `false` if you wish to temporarily disable the deletion of videos for passed tests.
